@@ -1,6 +1,5 @@
 '''
 Basic example of all subtrings available from a single string
-
 '''
 
 def get_all_substrings(word: str) -> list[str]:
@@ -10,7 +9,7 @@ def get_all_substrings(word: str) -> list[str]:
     final = []
     
     while not (l == 0 and r == len(word) + 1): 
-        print(f"{word[l:r]}")
+        # print(f"{word[l:r]}")
         final.append(word[l:r])
         
         l+= 1
@@ -23,7 +22,6 @@ def get_all_substrings(word: str) -> list[str]:
             l = 0
     return final 
 
-example = "example"
-example_substrings = get_all_substrings(example)
-
-print(example_substrings)
+if __name__ == "__main__":
+    example = "example"
+    example_substrings = get_all_substrings(example)
